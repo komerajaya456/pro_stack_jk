@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <p id="display">hello there</p>
+    
+    <p>this web local storage is has maximum 5mb, previously used cookies max(4kb) </p>
+    
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        let para=document.getElementById('display');
+        
+        let ourdata=localStorage.setItem('name','rakshith');
+        console.log(para.innerHTML);
+
+        let ourobj={'first':'Siraj','last':'Anand'}
+        console.log(ourobj.first);
+        array=['hi','ji','li','ok'];
+        for (let i = 0; i < 10000; i++) {
+         ourobj.first = array[0];
+            console.log(ourobj,i);
+            var _lsTotal = 0,
+    _xLen, _x;
+for (_x in localStorage) {
+    
+    if (!localStorage.hasOwnProperty(_x)) {
+        continue;
+    }
+    
+    _xLen = ((localStorage[_x].length + _x.length) * 2);
+    _lsTotal += _xLen;
+    
+    console.log(_x.substr(0, 50) + " = " + (_xLen / 1024).toFixed(2) + " KB")
+};
+console.log("Total = " + (_lsTotal / 1024).toFixed(2) + " KB");
+   
+        }
+
+    </script>
+
+</body>
+</html>

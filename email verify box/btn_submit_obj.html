@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <label >Enter name:</label>
+    <input id="name" type="text"><br><br>
+    
+    <label >Enter age:</label>
+    <input id="age" type="number"><br><br>
+    
+    <label >Enter account number:</label>
+    <input id="ac_no" type="number"><br><br>
+    
+    <p id="para">hi</p>
+    
+    <button onclick="myfun()">submit</button>
+    
+<script>
+
+    class Mybank{
+        
+        constructor(name,age,ac_no){
+            this.name=name;
+            this.age=age;
+            this.ac_no=ac_no;
+
+        }
+    }
+    function myfun(){
+        let n1=document.getElementById("name").value;
+        let n2=document.getElementById("age").value;
+        let n3=document.getElementById("ac_no").value;
+
+     
+        let obj1=new Mybank(n1,n2,n3);
+        console.log(obj1.name);   
+    }
+    document.getElementById("para").innerHTML=obj1.name;         
+</script>
+</body>
+</html>
