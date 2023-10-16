@@ -1,0 +1,11 @@
+1.undirected graphs (u=v)
+2.directed graphs(u-v) we can also hv 2dir(u=v)
+3.cycle graphs(start and should same)
+4.path (1 2 5 )  (1 2 5 2)x
+5.degree in undirected graphs(sum(degree)=2*edges)
+6.degree in directed graphs (indegree,outdegree)
+7.edge weight (default=1) if not assigned
+
+
+8.node representing matrix(n*n)
+9.array format ,list in array (n+1) indexes
