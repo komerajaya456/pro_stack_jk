@@ -1,0 +1,4 @@
+1.V8 engine taken out from browser.
+2.v8 eng code written in C++.
+3.now c++ is wrapped by JS code ,combined called nodejs
+4.our code written in js,go to wrapped  JS code & this wrapped JS code convert to C++ code.[to understand for v8 engine]

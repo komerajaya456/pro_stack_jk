@@ -1,0 +1,3 @@
+Routing
+  i.get route(url can be              visible like image search "www.google.com/dihfbh3w48y8 id=shivudu+wallpaper+in+HD")
+  ii.post route(url cant display like email,password of login)
