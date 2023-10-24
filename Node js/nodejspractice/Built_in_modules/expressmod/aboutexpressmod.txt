@@ -1,3 +1,22 @@
 Routing
   i.get route(url can be              visible like image search "www.google.com/dihfbh3w48y8 id=shivudu+wallpaper+in+HD")
   ii.post route(url cant display like email,password of login)
+  app.get("/routing",(req,res)=>{}) //req contain user Data[loc,ip address] 
+middleware:-
+  i.we can execute somethning in middle of apk.get (or) before routing
+
+  ii.every time app.use run if we reload page(it will come again from starting)
+  
+Route parameters:-
+  fb.com/profile/gow
+  fb.com/profile/hvn
+  fb.com/profile/jk
+  fb.com/profile/ab
+  above{fb.com/profile} #didn't need to write 4 app.get('4 routes')
+  so to avoid this we use 
+  
+  i.Dynamic routing
+  app.get('/profile/:username',(req,res=>{
+    console.log(req.params)
+    res.send(`hello ${req.params.username'})
+  }))
