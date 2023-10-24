@@ -14,13 +14,17 @@ app.get('/:page',(req,res)=>{  //params=page
   console.log(req.params)
   res.send(`hello ${req.params.page}`)
 })
-
+ 
 app.get('/profile/:username',(req,res)=>{
   console.log(req.params)
   res.send(`hello ${req.params.username}`)
   
 })
 
+
+// app.get('/request',function(req,res){
+//   res.send(`${JSON.stringify(req)}`)
+// })
 
 
 

@@ -15,8 +15,18 @@ Route parameters:-
   above{fb.com/profile} #didn't need to write 4 app.get('4 routes')
   so to avoid this we use 
   
-  i.Dynamic routing
-  app.get('/profile/:username',(req,res=>{
+    i.Dynamic routing
+    app.get('/profile/:username',(req,res=>{
     console.log(req.params)
     res.send(`hello ${req.params.username'})
-  }))
+    }))
+    
+    
+Template engines:-add dynamic data in html page.or in the middle of content ,without using backend for html
+EX:-ejs[<%= name%>](like html syntax,but not html),pug(like python syntax),ajs(python),moustach,hbs[{{name}}]
+
+NOTE:-to use template engines ,compulsary above extension files(or) template files should be in 
+ "views" named folder only.
+
+
+  --><h1>hello <%= name%><h1> we can use dynamic data in [ejs] but not in [html]
