@@ -1,0 +1,2 @@
+1.chrome extensions=google play store
+  it contains extensions like(google translator,speed test etc) useful for webpages
