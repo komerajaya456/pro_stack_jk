@@ -1,2 +1,5 @@
 1.chrome extensions=google play store
   it contains extensions like(google translator,speed test etc) useful for webpages
+  
+  
+2.https://developer.mozilla.org ,go search for any usage of html,css,js
