@@ -6,3 +6,15 @@
 
 3.<div> tag used as container 
 4. DOM root node tree hirachy way (dom refreshes all at a time from start to end)
+
+
+5. .id= unique uses for one time only use
+   #classes=for mostly css
+   
+   
+6. if we use dom in js from html without running html it gives refference err (using it early) becoz u didnt run html in chrome.
+
+7. querySelectorAll(".btn") show all id with btn name
+
+
+8. <script> tag should be before <body>  tag bcoz,html run in heraichi way,it  will display first ,before javascript running ,js take long time to run first in html page
