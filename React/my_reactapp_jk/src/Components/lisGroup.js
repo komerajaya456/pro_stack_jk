@@ -1,13 +1,16 @@
 
 
 function Lisgr(){
+  let tot_lik=87;
   return ( 
-    
+    //if we use different tags we should use fragments( like <div> container)    
   
+    <fragment>
     
-  <button className="btn btn-warning">Like</button>
-
-
+    <h4>this is JSX(javascript XML) file</h4>
+  <button className="btn btn-warning"><p>{tot_lik}</p>Like</button>
+    
+    </fragment>
   
   
   

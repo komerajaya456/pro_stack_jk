@@ -18,3 +18,5 @@
 
 
 8. <script> tag should be before <body>  tag bcoz,html run in heraichi way,it  will display first ,before javascript running ,js take long time to run first in html page
+
+

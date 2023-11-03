@@ -1,0 +1,8 @@
+1.  let :() used only inside block 
+  var :used anywhere in code 
+  const : value cant be changed
+conclud:-both can be same outsude block cant work
+
+
+2.eval('35'+'45')==>3545
+  eval('35+45)  ==>80
