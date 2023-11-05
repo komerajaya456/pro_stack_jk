@@ -1,7 +1,8 @@
-1.  let :() used only inside block 
-  var :used anywhere in code 
-  const : value cant be changed
-conclud:-both can be same outsude block cant work
+1.  var :only accessable inside function&also accessible inside ,outside    of block 
+    
+    let,const:used only inside curly {} blocks,not outside
+    
+
 
 
 2.eval('35'+'45')==>3545
