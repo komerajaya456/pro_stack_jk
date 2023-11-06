@@ -1,13 +1,30 @@
 import Btncls from './ourbtn'
-import Lisgr from './lisGroup'
+import expobj from './lisGroup'
 import './App.css'
+// import Jkclass from './classextends'
+
 function jk(){
-  return(
-    <>
-    <h1>hello</h1>
-    <h1><Btncls/></h1>
-    <h1><Lisgr/></h1>
-    </>
+//below is array  
+  // var contacts=[
+  //   {
+  //     id:'2',
+  //     name:'komera'
+  //   }
+    
+  //   ]
+  var obj1={"name":"komera","age":21}
+  var company="gowtham"  
+  return (
+  <div className="ui container">
+    <h1>{JSON.stringify(obj1)}helo0 {company}and{expobj.expvar}</h1>
+    
+    
+    
+    <Btncls myvar={company}/>
+    <expobj.lisgr />
+    
+    </div>
     )
 }
-export default jk;
+
+export default jk

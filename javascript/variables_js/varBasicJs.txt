@@ -1,4 +1,4 @@
-1.  var :only accessable inside function&also accessible inside ,outside    of block 
+1.  var :only accessable inside function and not outside of function &also accessible inside ,outside of {}block 
     
     let,const:used only inside curly {} blocks,not outside
     

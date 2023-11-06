@@ -6,3 +6,27 @@
   #babeljs.io/repl in this we can see how html tage<h1> in js file -->converted to react.
   
 2)while import App,Lisgr,Btncls (we should use capital letter mandatory) in js any file from react app.
+
+3)in JSX file we use camelCase
+  margin-top==marginTop
+  
+4)We can only imp,exp functions,classes{render(){}} in JSX files
+
+5)we export using ==.export default fun_name;
+  when we want to export more functions,variables we create object like:-
+  const expobj={fun_name,var_nam1,var_nam2}
+  while we (import expobj from './file_name')
+  we use (expobj.fun_name),(expobj.var_nam1)
+  
+6)we can use props to export variables data
+  'props' is a function component arguments
+  <fun_name name={"komera"}/> in other
+  function fun_name(props){
+    return(
+    <fragments>
+    <h1>hello {props.name}</h1>
+    <h2>heading 2</h2>
+    </fragments>
+    )
+  }
+  
