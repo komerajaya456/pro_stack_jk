@@ -1,0 +1,4 @@
+1)By default we cant use JS file file import,export keywords.
+  by using <script>type="module" src="" </script> in HTML page
+                                    or
+  by changing "type":"module", in package.json [we get package.json file by npm init -y]

@@ -1,0 +1,8 @@
+#we can change in index.js  
+1)JS:app.js (should be export)
+  css:index.css 
+  Html:rendered in app.js
+  HTML :written in app.js <h1>hello {js valus} </h1>
+  #babeljs.io/repl in this we can see how html tage<h1> in js file -->converted to react.
+  
+2)while import App,Lisgr,Btncls (we should use capital letter mandatory) in js any file from react app.
