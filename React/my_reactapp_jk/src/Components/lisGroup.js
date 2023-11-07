@@ -7,8 +7,8 @@ function Lisgr(){
   
     <fragment>
     
-    <h4>this is JSX(javascript XML) file</h4>
-  <button className="btn btn-primary"><p>{tot_lik}</p>Like</button>
+    <h4>heading </h4>
+     <button className="btn btn-primary">like</button>
     
     </fragment>
   

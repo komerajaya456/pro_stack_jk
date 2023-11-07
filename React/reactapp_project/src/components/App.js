@@ -1,6 +1,8 @@
 import Btncls from './ourbtn'
 import expobj from './lisGroup'
+import Tagaccess from './accesstag.js'
 import './App.css'
+
 // import Jkclass from './classextends'
 
 function jk(){
@@ -13,16 +15,16 @@ function jk(){
     
   //   ]
   var obj1={"name":"komera","age":21}
-  var company="gowtham"  
+  var company="gowtham"
   return (
-  <div className="ui container">
+  <div>
     <h1>{JSON.stringify(obj1)}helo0 {company}and{expobj.expvar}</h1>
     
     
     
     <Btncls myvar={company}/>
     <expobj.lisgr />
-    
+    <Tagaccess/>
     </div>
     )
 }

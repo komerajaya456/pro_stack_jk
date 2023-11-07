@@ -1,5 +1,6 @@
-import Lisgr from './Components/lisGroup.js'
+import Lisgr from './lisGroup.js'
 function apk(){
+  
   return(
     <h1><Lisgr/></h1>
     )
