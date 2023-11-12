@@ -10,9 +10,10 @@
 3)in JSX file we use camelCase
   margin-top==marginTop
   
-4)We can only imp,exp functions,classes{render(){}} in JSX files
+4)only two components
+We can only imp,exp functions,classes{render(){}} in JSX files
 
-5)we export using ==.export default fun_name;
+5)we export using ==>export default fun_name;
   when we want to export more functions,variables we create object like:-
   const expobj={fun_name,var_nam1,var_nam2}
   while we (import expobj from './file_name')
@@ -30,3 +31,4 @@
     )
   }
   
+  7)npx is pkg runner without using to install REACT.

@@ -1,9 +1,17 @@
-import Lisgr from './lisGroup.js'
-function apk(){
+import Funcomp from './funcomp.js'
+import Clscomp from './classcomp.js'
+import Nojsx from './withoutjsx.js'
+
+function App(){
   
   return(
-    <h1><Lisgr/></h1>
+    <div>
+
+    <Funcomp/>
+    <Clscomp/>
+    <Nojsx/>
+    </div>
     )
 }
 
-export default apk
+export default App
