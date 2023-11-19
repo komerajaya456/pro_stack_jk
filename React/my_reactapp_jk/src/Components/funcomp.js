@@ -3,7 +3,7 @@ const Funcomp=()=>{
     
     <fragment>
     
-    <h4>heading 1</h4>
+    <h3>Functional components</h3>
      <button className="btn btn-primary">like</button>
     
     </fragment>

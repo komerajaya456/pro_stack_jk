@@ -5,7 +5,7 @@ class Clscomp extends Component{
   render(){
     return(
       
-      <h1>Class Component</h1>
+      <h1>Class Component render()</h1>
       
       )
   }
