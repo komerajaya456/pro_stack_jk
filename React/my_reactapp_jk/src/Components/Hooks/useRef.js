@@ -1,20 +1,18 @@
-import {useRef} from "react"
+import {useRef} from 'react'
 
 function Idaccess(){
-  var Textjk=useRef();
-  
-  function handle(){
-    Textjk.current.value=1;
+  const gow=useRef("hvn") //this is object {current:"hvnm"}
+  function update(){
+    gow.current.innerText="hello"
   }
   return(
     <div>
-    
-     <p ref={Textjk}>0</p>
-     
-     <button onClick={handle}>Click</button>
-    
+      <p ref={gow}>useRef ref(id) access{JSON.stringify(gow)}</p>
+      
+      <button onClick={update}>Click</button>
+      
+      
     </div>
-    
     )
 }
 
