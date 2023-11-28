@@ -1,21 +1,22 @@
-import Funcomp from './funcomp.js'
-import Clscomp from './classcomp.js'
-import Nojsx from './withoutjsx.js'
-import Properties from './propsreact'
-import Idaccess from './Hooks/useRef'
-import UseState from './Hooks/useState'
+// import Funcomp from './funcomp.js'
+// import Clscomp from './classcomp.js'
+// import Nojsx from './withoutjsx.js'
+// import Properties from './propsreact'
+// import Idaccess from './Hooks/useRef'
+//import Inpidaccess from './Hooks/useRef2'
+
+//import LocalStorage from './localStorage'
+import Inptoobj from './Hooks/useRef3inpval_obj.js'
+
+
+//import UseState from './Hooks/useState'
 
 function App(){
-  
+  const obj=[];
   return(
     <div>
 
-      <Funcomp/><br/><br/><br/>
-      <Clscomp/><br/><br/>
-      <Nojsx/><br/><br/>
-      <Properties name={"\"this is my name\""}/><br/><br/>
-      <Idaccess/>
-      <UseState/>
+      <Inptoobj />
     </div>
     )
 }

@@ -1,0 +1,32 @@
+<!--taking input val to variable-->
+
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" href="styles/style.css"/>
+  <title>Hello, World!</title>
+  <link  href="./styles/stylesht.css" rel="stylesheet">
+  
+</head>
+<body>
+    
+    <p id="para">this is para</p>
+    <input type="text" id="inpval" /><br>
+     <button onclick="kom()" id="btn">click</button>
+  
+  
+  <script>
+    
+    function kom(){
+      var inptak=document.getElementById("inpval");
+      var parag=document.getElementById("para");
+      var jk=inptak.value;
+      parag.innerHTML=jk;
+      
+    }
+    
+  </script>   
+</body>
+</html>
