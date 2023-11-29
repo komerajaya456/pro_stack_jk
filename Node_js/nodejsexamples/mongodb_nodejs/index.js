@@ -1,10 +1,10 @@
 const express=require('express')
 const apk=express()
 
+const obj={name:"komera"}
+apk.get('/',(req,res)=>{
 
-apk.get('/home',(req,res)=>{
-  
-  res.render("<h1>heading<h1/>")
+  res.send(JSON.stringify(obj))
 })
 
 apk.listen(3000,()=>{console.log("connected to server")})

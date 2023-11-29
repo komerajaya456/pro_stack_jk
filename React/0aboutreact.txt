@@ -32,3 +32,7 @@ We can only imp,exp functions,classes{render(){}} in JSX files
   }
   
   7)npx is pkg runner without using to install REACT.
+  
+  
+  8)We can't write .js file in react application like require("react") ,becoz in REACT
+  The React application is loaded in the user's browser and makes requests to the Node.js server to fetch or send data.
