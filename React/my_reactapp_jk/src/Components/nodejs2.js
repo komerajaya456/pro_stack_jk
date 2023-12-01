@@ -1,17 +1,27 @@
-const express = require('express');
-const path = require('path');
+const SendDataToNode = async () => {
+  const data = { name: 'komera' }; // Replace with your actual data
 
-const app = express();
-const port = process.env.PORT || 5000;
+  try {
+    const response = await fetch('http://localhost:3001/', {
+      method: 'GET',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(data),
+    });
 
-// Serve the static files from the React app
-app.use(express.static(path.join(__dirname, './App.js')));
+    if (response.ok) {
+      console.log('Data sent successfully');
+    } else {
+      console.error('Failed to send data');
+    }
+  } catch (error) {
+    console.error('Error:', error);
+  }
+  return(<h1>heading now</h1>)
+};
 
-// Handle other routes and return the React app
-app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, './App.js'));
-});
+// Call the function when you want to send data
 
-app.listen(port, () => {
-  console.log(`Server is running on port ${port}`);
-});
+SendDataToNode();
+export default SendDataToNode;

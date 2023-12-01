@@ -1,20 +1,18 @@
-// Node.js server using Express and handling POST request with bodyParser
 const express = require('express');
 const bodyParser = require('body-parser');
 
 const app = express();
-const port = 8080;
+const port = 3001;
 
 app.use(bodyParser.json());
 
-app.post('/', (req, res) => {
+app.get('/', (req, res) => {
   const receivedData = req.body;
-  console.log('Received data from React:', receivedData);
+  console.log('Received data:', receivedData);
 
   // Process the data as needed
 
-  // Send a response back to React if needed
-  res.json({ message: 'Data received on the server' });
+  res.status(200).send('Data received successfully');
 });
 
 app.listen(port, () => {
