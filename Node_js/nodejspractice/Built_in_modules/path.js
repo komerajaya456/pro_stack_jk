@@ -14,5 +14,6 @@ console.log("Done")
 console.log(path.format(path.parse(__filename)))
 console.log(path.isAbsolute('./data.json'))//check wether file exists or not
 console.log(path.isAbsolute(__filename))*/
+//path.relative('/path/from', '/path/to/file.txt'); // Returns: '../to/file.txt'
 
 console.log(path.join("data.json"))
