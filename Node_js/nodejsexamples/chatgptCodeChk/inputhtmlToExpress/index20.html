@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <p>hey</p>
+    <button onclick="kom()">click</button>
+</head>
+<body>
+    <script>
+        function kom(){
+       
+        fetch('/login',{
+        method:'post',
+        headers: {'Content-Type': 'text',},
+        body:"hello",
+    })
+    .then((res)=>{return (res)})
+    .then((value)=>{console.log(value)})
+
+
+        }
+
+
+        
+
+    </script>
+</body>
+</html>
