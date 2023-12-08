@@ -1,35 +1,29 @@
-<!--<html>
-  <head>
-    
-    <title>
-      this is fecth api
-    </title>
-    
-    
-  </head>
-  
-  <body>
-    
-    <h2 id="head">this is for fecth api index html file</h2>
-    <button onclick="kom()">click</button>
-    <script src="./fetch.js"></script>
-  </body>
-  
-</html>-->
-
-<!-- 
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Send Data to Server</title>
+    <title>Fetch Example</title>
 </head>
 <body>
-    <button onclick="sendDataToServer()">Send Data</button>
 
-    <script src="./fetch.js">
-        
+    <h1>Fetch Example</h1>
+
+    <script>
+        // JavaScript code using Fetch API
+        const dataToSend = { key: 'value' };
+
+        fetch('http://localhost:3000/', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(dataToSend),
+        })
+        .then(response => response.json())
+        .then(data => console.log(data))
+        .catch(error => console.error('Error:', error));
     </script>
+
 </body>
-</html> -->
+</html>

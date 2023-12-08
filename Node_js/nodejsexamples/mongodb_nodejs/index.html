@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Send Data to Node.js</title>
+</head>
+<body>
+  <button onclick="sendData()">Send Data</button>
+
+  <script>
+    function sendData() {
+      // Get data from your HTML elements
+      const data = {
+        key1: 'value1',
+        key2: 'value2',
+        // Add more key-value pairs as needed
+      };
+
+      // Make a POST request to your Node.js server
+      fetch('http://localhost:3000/', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+      })
+      .then(response => response.json())
+      .then(result => {
+        console.log('Server response:', result);
+      })
+      .catch(error => {
+        console.error('Error:', error);
+      });
+    }
+  </script>
+</body>
+</html>

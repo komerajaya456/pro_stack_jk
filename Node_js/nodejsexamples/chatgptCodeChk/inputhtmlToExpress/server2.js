@@ -1,8 +1,8 @@
 // const express = require('express');
 // const mongoose=require('mongoose')
 // const app = express();
-// const port = 3000;
 
+// const port = 3000;
 // const uri = 'mongodb+srv://komerajaya7259:eihlGz2XfQOM3FoJ@secondcluster.vzmnsfg.mongodb.net/?retryWrites=true&w=majority'
 
 // mongoose.connect(uri);
