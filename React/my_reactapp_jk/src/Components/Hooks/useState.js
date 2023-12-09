@@ -1,26 +1,21 @@
 import {useState,useRef} from 'react'
 import './useState.css'
 function UseState(){
-  const idaccess=useRef("")
-  //[currentval,updatedval]=useState(currentval)
-  idaccess.current="lllk"
-  const [currentval,updatevalue]=useState(idaccess.current)
-  
-  return(
-    <>
-    <h1>hrr{currentval}</h1>
-    <div>
-      <button >change</button><span ref={idaccess} className="textbtn">this will chang</span>
-      <button >undo</button>
-      
-      
+ 
+ 
+  const [one,sec]=useState("HI")
     
-    </div>
+ return(<>
+    <button onClick={()=>sec(one+"gow")}>+</button>
+    <span>{one}</span>
+    <button onClick={()=>sec(one+"jk")}>-</button>
     
+ 
+ 
+ 
+ </>
+ )
     
-    </>
-    )
-  
 }
 
 

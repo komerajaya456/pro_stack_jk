@@ -5,18 +5,20 @@
 // import Idaccess from './Hooks/useRef'
 //import Inpidaccess from './Hooks/useRef2'
 
+
+
 //import LocalStorage from './localStorage'
 //import Inptoobj from './Hooks/useRef3inpval_obj.js'
 //import YourComponent from './frntbackend'
-import SendDataToNode from './nodejs2'
+//import SendDataToNode from './nodejs2'
 //import UseState from './Hooks/useState'
-
+import Bothrefstate from "./Hooks/bothrefstate"
 function App(){
   
   return(
     <div>
 
-      <SendDataToNode />
+      <Bothrefstate />
     </div>
     )
 }
