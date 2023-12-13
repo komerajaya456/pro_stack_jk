@@ -1,0 +1,20 @@
+name,cost,qtyperday,dose,stripqty		      
+CARDACE 2.5, 5.2, 2, [After Breakfast, After Dinner], 15
+CARCA 3.125, 2.94, 2, [After Breakfast, After Dinner], 15
+FRUSELAC   , 3.5, 0.5, [After Breakfast ], 10
+LANOXIAN 0.25mg, 1.2, 0.5, [After Breakfast ], 10
+ELTROXIN 100mcg, 1.25, 1, [Before Breakfast ], 120
+STORVAS 20mg, 13.516, 1, [After Dinner ], 15
+T Lodoz 2.\t5, 8, 1, [Before Breakfast ], 10
+Hifenac-D   , 10.6, 2, [After Breakfast, After Dinner], 10
+Orpenem ER 300mg, 102.5, 2, [After Breakfast, After Dinner], 6
+Remetor CV 10mg, 15.5, 1, [nt, After Dinner], 10
+Embeta-TM 25mg, 15.067, 1, [After Breakfast ], 15
+Geminor \tM1 , 7.74, 2, [Before Breakfast, Before Dinner], 15
+Razo-D(dr.reddy LTD), 19.9, 2, [Before Breakfast, Before Dinner], 15
+Tide plus 10mg, 3.775, 0.5, [After Lunch ], 10
+Torget Plus 10mg, 10.38, 0.5, [After Breakfast ], 10
+Bylenta M50, 14, 1, [After Breakfast ], 15
+"Atocor Cv 10mg (Dr Reddys LAB Ltd)", 16.176, 1, [After Dinner ], 10
+
+
