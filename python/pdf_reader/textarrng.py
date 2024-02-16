@@ -1,4 +1,3 @@
-import csv
 import re
 
 def parse_text(text):
@@ -181,20 +180,8 @@ Phone No:9900869989  ,,,,CAN U GIVE CODE FOR THIS TEXT"""
 # Parsing the text
 parsed_data = parse_text(sample_text)
 
-# Writing data to CSV file
-with open('parsed_data.csv', 'w', newline='', encoding='utf-8') as csvfile:
-    writer = csv.writer(csvfile)
-
-    # Write header row
-    writer.writerow(['Section', 'Content'])
-
-    # Write each section and content as a row
-    for section, content in parsed_data.items():
-        if isinstance(content, dict):  # Flatten dictionaries
-            for key, value in content.items():
-                writer.writerow([key, value])
-        elif isinstance(content, list):  # Flatten lists
-            for item in content:
-                writer.writerow([section, item])
-        else:
-            writer.writerow([section, content])
+# Printing the structured data
+for section, content in parsed_data.items():
+    print(section)
+    print(content)
+    print()
