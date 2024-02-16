@@ -13,7 +13,7 @@ try:
 
     collection = db[collection_name]
 
-    query_result = collection.insert_one({"key1": "4value"})
+    query_result = collection.insert_one({"key123": "4value"})
     
     print(query_result)
 
