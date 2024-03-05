@@ -1,16 +1,13 @@
-#if pdf is loike rows & columns
+import fitz  # PyMuPDF
 
-import tabula
+def extract_text_with_ocr(pdf_path):
+    text = ""
+    doc = fitz.open(pdf_path)
+    for page_num in range(doc.page_count):
+        page = doc.load_page(page_num)
+        text += page.get_text()
+    return text
 
-# Replace 'your_pdf.pdf' with the path to your PDF file
-pdf_path = 'sample.pdf'
-
-# Read tables from PDF into DataFrame
-tables = tabula.read_pdf(pdf_path, pages='all', multiple_tables=True)
-
-# Print each table
-for i, table in enumerate(tables, start=1):
-    print(f"Table {i}:")
-    print(table)
-    print("\n")
- 
+pdf_path = "Komera Jaya Krishna resume.pdf"
+extracted_text = extract_text_with_ocr(pdf_path)
+print(extracted_text)
