@@ -12,7 +12,7 @@
 //import Bothrefstate from "./Hooks/bothrefstate"
 
 //down all for routes
-
+//
 //
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './routes/navbar';
