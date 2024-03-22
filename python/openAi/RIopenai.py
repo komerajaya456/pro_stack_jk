@@ -1,5 +1,5 @@
 from openai import OpenAI
-API_key="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"
+# API_key="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"
 client = OpenAI(api_key=API_key)
 
 com=client.chat.completions.create(
